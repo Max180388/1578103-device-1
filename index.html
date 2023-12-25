@@ -7,18 +7,20 @@
     <title>Device магазин гаджетов</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="./Images/icons/favicon.png">
+    <link rel="icon" href="./img/icons/favicon.png">
   </head>
 
   <body>
     <header class="header">
       <a href="index.html" class="logo-link">
-        <img src="./Images/logo.svg" alt="Логотип интернет-магазина &quot;Девайс&quot;" class="logo-ing" width="145" height="36">
+        <img src="./img/logo.svg" alt="Логотип интернет-магазина &quot;Девайс&quot;" class="logo-ing" width="145" height="36">
       </a>
       <nav class="nav">
         <form action="https://echo.htmlacademy.ru/" class="search-form" method="get">
           <input type="text" class="search-field" name="search" placeholder="Поиск по сайту" id="search" required>
-          <label for="search" class="search-field-label"></label>
+          <label for="search" class="search-field-label">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </label>
           <button type="submit" class="search-button">Найти</button>
         </form>
         <ul class="user-login-list">
@@ -37,66 +39,68 @@
             <a href="#" class="user-menu-link compare">Сравнить</a>
           </li>
           <li class="user-menu-item">
-            <a href="#" class="user-menu-link basket">
+            <a href="#" class="user-menu-link cart">
               <span class="number-products">2</span>
               <span>Корзина</span>
             </a>
-
+            <div class="popover-cart">
+              <ul class="popover-product-list">
+                <li class="popover-product-item">
+                  <a href="" class="popover-product-link">
+                    <img src="./img/popover/product-cart-image-1.jpg" alt="Любительская селфи-палка" class="popover-product-image" width="39" height="43">
+                    <span class="popover-product-name">Любительская селфи-палка</span>
+                  </a>
+                  <button type="button" class="popover-product-delete">
+                    <Span class="visually-hidden">Удалить товар из корзины</Span>
+                  </button>
+                </li>
+                <li class="popover-product-item">
+                  <a href="href=" class="popover-product-link">
+                    <img src="./img/popover/product-cart-image-2.jpg" alt="Профессиональная
+                      селфи-палка" class="popover-product-image" width="39" height="43">
+                    <span class="popover-product-name">Профессиональная
+                      селфи-палка</span>
+                  </a>
+                  <button type="button" class="popover-product-delete">
+                    <Span class="visually-hidden">Удалить товар из корзины</Span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="popover-footer-list">
+                <li class="popover-footer-item">
+                  <span class="popover-footer-title">Товаров:</span>
+                  <span class="popover-footer-values">2</span>
+                </li>
+                <li class="popover-footer-item">
+                  <span class="popover-footer-title">Сумма:</span>
+                  <span class="popover-footer-values">2000 ₽</span>
+                </li>
+              </ul>
+              <a href="#" class="popover-button">Открыть корзину</a>
+            </div>
           </li>
         </ul>
-        <div class="popover-basket">
-          <ul class="popover-product-list">
-            <li class="popover-product-item">
-              <a href="" class="popover-product-link">
-                <img src="" alt="" class="popover-product-image">
-              </a>
-              <a href="" class="popover-product-link">
-                <span class="popover-product-name"></span>
-              </a>
-              <button class="popover-close"></button>
+
+        <div class="catalog-button">
+          <a href="#" class="catalog-button-link">Каталог товаров</a>
+          <ul class="catalog-menu-list">
+            <li class="catalog-menu-item">
+              <a href="#" class="catalog-menu-link active-catalog-menu">Виртуальная реальность</a>
+              <a href="#" class="catalog-menu-link">Моноподы для cелфи</a>
+              <a href="#" class="catalog-menu-link">Экшн-камеры</a>
             </li>
-            <li class="popover-product-item">
-              <a href="" class="popover-product-link">
-                <img src="" alt="" class="popover-product-image">
-              </a>
-              <a href="" class="popover-product-link">
-                <span class="popover-product-name"></span>
-              </a>
-              <button class="popover-close"></button>
+            <li class="catalog-menu-item catalog-menu-mark">
+              <a href="#" class="catalog-menu-link">Фитнес-браслеты</a>
+              <a href="#" class="catalog-menu-link">Умные часы</a>
+            </li>
+            <li class="catalog-menu-item">
+              <a href="#" class="catalog-menu-link">Квадрокоптеры</a>
             </li>
           </ul>
-          <div class="popover-footer">
-            <ul class="popover-footer-list">
-              <li class="popover-footer-item">
-                <span class="popover-footer-title"></span>
-                <span class="popover-footer-values"></span>
-              </li>
-              <li class="popover-footer-item">
-                <span class="popover-footer-title"></span>
-                <span class="popover-footer-values"></span>
-              </li>
-            </ul>
-            <a href="#" class="popover-button popover-button-disabled">Открыть корзину</a>
-          </div>
         </div>
-        <a href="#" class="catalog-button">Каталог товаров</a>
-        <ul class="catalog-menu-list">
-          <li class="catalog-menu-item">
-            <a href="#" class="catalog-menu-link active-menu">Виртуальная реальность</a>
-            <a href="#" class="catalog-menu-link">Моноподы для cелфи</a>
-            <a href="#" class="catalog-menu-link"></a>
-          </li>
-          <li class="catalog-menu-item">
-            <a href="#" class="catalog-menu-link"></a>
-            <a href="#" class="catalog-menu-link"></a>
-          </li>
-          <li class="catalog-menu-item">
-            <a href="#" class="catalog-menu-link"></a>
-          </li>
-        </ul>
         <ul class="general-information-list">
           <li class="general-information-item">
-            <a href="#" class="general-information-link active-menu">Доставка</a>
+            <a href="#" class="general-information-link active-menu ">Доставка</a>
           </li>
           <li class="general-information-item">
             <a href="#" class="general-information-link">Гарантия</a>
