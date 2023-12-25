@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device магазин гаджетов</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./Images/icons/favicon.png">
   </head>
+
   <body>
+    <header class="header">
+      <a href="index.html" class="logo-link">
+        <img src="./Images/logo.svg" alt="Логотип интернет-магазина &quot;Девайс&quot;" class="logo-ing" width="145" height="36">
+      </a>
+      <nav class="nav">
+        <form action="https://echo.htmlacademy.ru/" class="search-form" method="get">
+          <input type="text" class="search-field" name="search" placeholder="Поиск по сайту" id="search" required>
+          <label for="search" class="search-field-label"></label>
+          <button type="submit" class="search-button">Найти</button>
+        </form>
+        <ul class="user-login-list">
+          <li class="user-login-item  user-login-active">
+            <a href="#" class="user-login-link user-icon">Войти</a>
+          </li>
+          <li class="user-login-item">
+            <a href="#" class="user-login-link user-icon">Коля Петухов</a>
+          </li>
+          <li class="user-login-item">
+            <a href="#" class="user-login-link login-link-exit ">Выйти</a>
+          </li>
+        </ul>
+        <ul class="user-menu-list">
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link compare">Сравнить</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link basket">
+              <span class="number-products">2</span>
+              <span>Корзина</span>
+            </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+          </li>
+        </ul>
+        <div class="popover-basket">
+          <ul class="popover-product-list">
+            <li class="popover-product-item">
+              <a href="" class="popover-product-link">
+                <img src="" alt="" class="popover-product-image">
+              </a>
+              <a href="" class="popover-product-link">
+                <span class="popover-product-name"></span>
+              </a>
+              <button class="popover-close"></button>
+            </li>
+            <li class="popover-product-item">
+              <a href="" class="popover-product-link">
+                <img src="" alt="" class="popover-product-image">
+              </a>
+              <a href="" class="popover-product-link">
+                <span class="popover-product-name"></span>
+              </a>
+              <button class="popover-close"></button>
+            </li>
+          </ul>
+          <div class="popover-footer">
+            <ul class="popover-footer-list">
+              <li class="popover-footer-item">
+                <span class="popover-footer-title"></span>
+                <span class="popover-footer-values"></span>
+              </li>
+              <li class="popover-footer-item">
+                <span class="popover-footer-title"></span>
+                <span class="popover-footer-values"></span>
+              </li>
+            </ul>
+            <a href="#" class="popover-button popover-button-disabled">Открыть корзину</a>
+          </div>
+        </div>
+        <a href="#" class="catalog-button">Каталог товаров</a>
+        <ul class="catalog-menu-list">
+          <li class="catalog-menu-item">
+            <a href="#" class="catalog-menu-link active-menu">Виртуальная реальность</a>
+            <a href="#" class="catalog-menu-link">Моноподы для cелфи</a>
+            <a href="#" class="catalog-menu-link"></a>
+          </li>
+          <li class="catalog-menu-item">
+            <a href="#" class="catalog-menu-link"></a>
+            <a href="#" class="catalog-menu-link"></a>
+          </li>
+          <li class="catalog-menu-item">
+            <a href="#" class="catalog-menu-link"></a>
+          </li>
+        </ul>
+        <ul class="general-information-list">
+          <li class="general-information-item">
+            <a href="#" class="general-information-link active-menu">Доставка</a>
+          </li>
+          <li class="general-information-item">
+            <a href="#" class="general-information-link">Гарантия</a>
+          </li>
+          <li class="general-information-item">
+            <a href="#" class="general-information-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h1></h1>
+      <div class="test"></div>
+    </main>
+    <footer class="footer"></footer>
   </body>
+
 </html>
