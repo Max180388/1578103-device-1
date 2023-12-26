@@ -1124,3 +1124,25 @@ body {
 .bullits-button-active {
   background-color: #000000;
 }
+
+.bullits-button:hover {
+  opacity: 0.6;
+}
+
+.bullits-button:focus-visible {
+  outline: 2px solid #af4fff;
+}
+
+@supports not selector(:focus-visible) {
+  .bullits-button:focus {
+    outline: 2px solid #af4fff;
+  }
+}
+
+.bullits-button:active {
+  opacity: 0.3;
+}
+
+.bullits-button:disabled {
+  opacity: 0.1;
+}
