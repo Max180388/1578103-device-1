@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="index-wrapper">
+    <div class="page-wrapper">
       <header class="header">
         <a href="index.html" class="logo-link">
           <img src="./img/logo.svg" alt="Логотип интернет-магазина &quot;Девайс&quot;" class="logo-img" width="145" height="36">
@@ -90,8 +90,8 @@
             <div class="catalog-menu-wrap">
               <ul class="catalog-menu-list">
                 <li class="catalog-menu-item">
-                  <a href="#" class="catalog-menu-link active-catalog-menu">Виртуальная реальность</a>
-                  <a href="#" class="catalog-menu-link">Моноподы для cелфи</a>
+                  <a href="#" class="catalog-menu-link">Виртуальная реальность</a>
+                  <a href="catalog.html" class="catalog-menu-link">Моноподы для cелфи</a>
                   <a href="#" class="catalog-menu-link">Экшн-камеры</a>
                 </li>
                 <li class="catalog-menu-item catalog-menu-mark">
@@ -106,7 +106,7 @@
           </div>
           <ul class="general-information-list">
             <li class="general-information-item general-information-item-delivery">
-              <a href="#" class="general-information-link active-menu">Доставка</a>
+              <a href="#" class="general-information-link">Доставка</a>
             </li>
             <li class="general-information-item general-information-item-guarantee">
               <a href="#" class="general-information-link">Гарантия</a>
@@ -228,7 +228,7 @@
               </a>
             </li>
             <li class="product-categories-item">
-              <a href="#" class="product-categories-link categories-monopods">
+              <a href="catalog.html" class="product-categories-link categories-monopods">
                 <p class="product-categories-title">Моноподы <br>для селфи</p>
               </a>
             </li>
@@ -427,12 +427,12 @@
           <form action="https://echo.htmlacademy.ru/" name="delivery" method="post" class="modal-form">
             <div class="form-wrap">
               <div class="field-name-wrap">
-                <label for="user-name" class="field-title">Ваше имя:</label>
+                <label for="user-name" class="field-title field-name">Ваше имя:</label>
                 <input type="text" class="field-modal" name="name" id="user-name" placeholder="Введите имя" required>
                 <span class="field-message">Нам нужно знать Ваше имя</span>
               </div>
-              <div class=" field-email-wrap">
-                <label for="email" class="field-title">Ваш e-mail:</label>
+              <div class="field-email-wrap">
+                <label for="email" class="field-title field-email">Ваш e-mail:</label>
                 <input type="email" class="field-modal field-modal-alarm" name="email" id="email" value="почта" placeholder="Введите e-mail" required>
                 <span class="field-message message-alarm">Забавный у вас адрес</span>
               </div>
@@ -444,11 +444,13 @@
               <div class=" field-quantity-wrap">
                 <div class="quantity-title-wrap">
                   <label for="quantity" class="field-title">Количество:</label>
-                  <div class="button-information-wrap">
-                    <button type="button" class="button-quantity-information button">
-                      <span class="visually-hidden">Информация</span>
-                    </button>
-                  </div>
+                  <button type="button" class="button-quantity-information button" aria-labelledby="tooltip-label">
+                    <span class="visually-hidden">Информация</span>
+                    <span class="tooltip">
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям <br>
+                        к провозу багажа.</span>
+                    </span>
+                  </button>
                 </div>
                 <div class="quantity-field-wrap">
                   <button type="button" class="button-quantity button-minus button">
