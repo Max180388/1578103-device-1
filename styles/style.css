@@ -718,7 +718,6 @@ body {
   text-decoration: none;
   position: relative;
   padding: 17px 64px 17px 0;
-
 }
 
 .catalog-button-link::after {
@@ -735,18 +734,9 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   opacity: 0.3;
-
 }
 
 .catalog-button-link:hover::after {
-  background-image: url("../img/index/minus.svg");
-  background-position: 50% 50%;
-  background-size: auto;
-  background-repeat: no-repeat;
-  opacity: 1;
-}
-
-.catalog-button:hover .catalog-button-link::after {
   background-image: url("../img/index/minus.svg");
   background-position: 50% 50%;
   background-size: auto;
